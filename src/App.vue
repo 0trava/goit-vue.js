@@ -1,18 +1,18 @@
 <template>
     <h1>{{title}}</h1>
-    <Button @click="increment">Click me please</Button>
-    <DirectiveTest></DirectiveTest>
+
+    <StarRating :rating="4"></StarRating>
 </template>
 
 <script>
-import Button from './components/Button.vue'
-import DirectiveTest  from './components/DirectivesTest.vue'
+
+import StarRating from './components/StarRating.vue'
 
 export default {
   name: 'App',
   components: {
-    Button,
-    DirectiveTest
+
+    StarRating
 
   },
   data() {

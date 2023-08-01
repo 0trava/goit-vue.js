@@ -9,3 +9,5 @@ $ npm i -D sass-loader node-sass
 
 $ npm run serve
 ```
+
+<!-- Fast command     - vbase -->
