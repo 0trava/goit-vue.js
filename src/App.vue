@@ -1,15 +1,18 @@
 <template>
     <h1>{{title}}</h1>
     <Button @click="increment">Click me please</Button>
+    <DirectiveTest></DirectiveTest>
 </template>
 
 <script>
 import Button from './components/Button.vue'
+import DirectiveTest  from './components/DirectivesTest.vue'
 
 export default {
   name: 'App',
   components: {
-    Button
+    Button,
+    DirectiveTest
 
   },
   data() {
