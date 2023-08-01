@@ -1,8 +1,5 @@
 <template>
-  <div id="app">
     <Button>Click me </Button>
-
-  </div>
 </template>
 
 <script>
