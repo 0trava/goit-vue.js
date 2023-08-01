@@ -1,5 +1,5 @@
 <template>
-    <Button>Click me </Button>
+    <Button>Click me please</Button>
 </template>
 
 <script>
