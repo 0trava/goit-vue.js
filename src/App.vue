@@ -12,7 +12,7 @@
 
 <script>
 import ApartmentItem from './components/apartment/ApartmentItem.vue'
-// import img1 from '../public/apartmens/apartment-1.jpg'
+import imgApartment1 from '../public/apartments/apartment-1.jpg'
 
 
 
@@ -26,7 +26,7 @@ export default {
       apartment: {
         id: '5f689a2c09b16000e9a2f47b',
         title: 'Delectus et iste.',
-        imgUrl: '../public/apartmens/apartment-1.jpg',
+        imgUrl: imgApartment1,
         descr: 'Debitis similique unde et eligendi sapiente in iure blanditiis distinctio. Cum nihil temporibus qui quam aut. Nesciunt qui eveniet eum quam voluptate numquam.',
         rating: 3,
         price: 1667,
