@@ -1,45 +1,64 @@
 <template>
-    <h1>{{title}}</h1>
-
-    <StarRating :rating="4"></StarRating>
+  <div >
+    <ApartmentItem 
+    :descr="apartment.descr"
+    :price="apartment.price"
+    :rating="apartment.rating"
+    :imgSrc="apartment.imgUrl"/>
+  </div>
 </template>
 
-<script>
 
-import StarRating from './components/StarRating.vue'
+
+<script>
+import ApartmentItem from './components/apartment/ApartmentItem.vue'
+// import img1 from '../public/apartmens/apartment-1.jpg'
+
+
 
 export default {
   name: 'App',
   components: {
-
-    StarRating
-
+    ApartmentItem,
   },
   data() {
     return {
-      amountOfClicks: 0
+      apartment: {
+        id: '5f689a2c09b16000e9a2f47b',
+        title: 'Delectus et iste.',
+        imgUrl: '../public/apartmens/apartment-1.jpg',
+        descr: 'Debitis similique unde et eligendi sapiente in iure blanditiis distinctio. Cum nihil temporibus qui quam aut. Nesciunt qui eveniet eum quam voluptate numquam.',
+        rating: 3,
+        price: 1667,
+        location: {
+          city: 'Dnipro',
+        },
+        owner: {
+          name: 'Bobbi',
+          phone: '582-740-2926',
+          email: 'Pete_Carter53@hotmail.com',
+        },
+      }
     }
+
   },
-  computed: {
-    title() {
-      return `Amount of clicks ${this.amountOfClicks}`
-    },
-  },
-  methods: {
-    increment() {
-      this.amountOfClicks += 1
-    },
-  },
+  
 }
 </script>
 
+
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.content {
+  flex-grow: 1;
 }
 </style>
