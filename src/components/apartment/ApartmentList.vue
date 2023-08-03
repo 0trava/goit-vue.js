@@ -1,6 +1,7 @@
 <template>
     
         <Container>
+            <slot name="title"></slot>
             <div class="apartment-list">
                 <ApartmentItem 
                 v-for="apartment in items"

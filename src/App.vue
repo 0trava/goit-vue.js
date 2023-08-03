@@ -1,6 +1,8 @@
 <template>
   <div >
-    <ApartmentList :items="apartments"/>
+    <ApartmentList :items="apartments">
+      <template v-slot:title>New Title</template>
+    </ApartmentList>
   </div>
 </template>
 
