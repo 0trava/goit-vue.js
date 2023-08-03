@@ -61,11 +61,11 @@
     }
   
     &--colored {
-      background: url('../../public/img/star-filled.svg') center no-repeat;
+      background: url('../../public/img/star-yellow.svg') center no-repeat;
     }
   
     &--outlined {
-      background: url('../../public/img/star-empty.svg') center no-repeat;
+      background: url('../../public/img/star-outlined.svg') center no-repeat;
     }
   }
 </style>
