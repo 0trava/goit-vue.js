@@ -1,7 +1,7 @@
 <template>
     <div class="apartment-item">
         <div class="apartment-item__inner">
-            <img :src="imgLoad" alt="apartment-item__photo" class="apartment-item__photo">
+            <img :src="imgSrc" alt="apartment-item__photo" class="apartment-item__photo">
             <div class="apartment-item__content">
                 <p class="apartment-item__description">
                     {{ descr }}
@@ -26,7 +26,7 @@ import StarRating from '../StarRating.vue'
         computed: {
             imgLoad() {
                 
-                return `https://github.com/0trava/goit-vue.js/blob/main/src/assets/img/apartments/apartment-1.jpg`
+                return `https://github.com/0trava/goit-vue.js/blob/main/public/img/apartments/apartment-1.jpg?raw=true`
             },
         },
         props: {

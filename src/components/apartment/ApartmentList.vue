@@ -1,24 +1,34 @@
 <template>
-    <div class="apartment-list">
-        <ApartmentItem 
-        v-for="apartment in items"
-        :key="apartment.id"
-        :descr="apartment.descr"
-        :price="apartment.price"
-        :rating="apartment.rating"
-        :imgSrc="apartment.imgUrl"
-        />
+    
+        <Container>
+            <div class="apartment-list">
+                <ApartmentItem 
+                v-for="apartment in items"
+                :key="apartment.id"
+                :descr="apartment.descr"
+                :price="apartment.price"
+                :rating="apartment.rating"
+                :imgSrc="apartment.imgUrl"
+                />
+            </div>
+        </Container>
 
 
-    </div>
+
+    
 </template>
 
 <script>
 import ApartmentItem from './ApartmentItem.vue'
+import Container from '../shared/Container.vue'
+
+
+
     export default {
         name: "ApartmentList",
         components: {
             ApartmentItem,
+            Container,
         },
         props: {
             items: {
@@ -30,7 +40,7 @@ import ApartmentItem from './ApartmentItem.vue'
 </script>
 
 <style lang="scss" scoped>
-.apartments-list {
+.apartment-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
