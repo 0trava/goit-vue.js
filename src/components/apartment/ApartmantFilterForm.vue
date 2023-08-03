@@ -31,6 +31,12 @@ import SubmitButton from '../Button.vue'
             CustomSelect,
             SubmitButton,
         },
+        data() {
+            return {
+                price: '',
+                city: ''
+            }
+        },
         computed: {
     // rules() {
     //   return [isRequired, charLimit(10)];
@@ -48,13 +54,16 @@ import SubmitButton from '../Button.vue'
         'Mariupol',
       ];
     },
-    methods: {
+  },
+  methods: {
         handleSubmit() {
-            this.$emit('submit', 'form submited')
+            this.$emit('submit', {
+                city: this.city,
+                price: this.price
+            });
         }
     }
-  },
-    }
+}
 </script>
 
 <style lang="scss" scoped>

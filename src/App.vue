@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     logger(value){
-      console.log(value, 'form value')
+      console.log(value, '---form value')
     },
   },
   
