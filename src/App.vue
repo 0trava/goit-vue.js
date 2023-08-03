@@ -1,6 +1,7 @@
 <template>
   <div >
     <CustomInput v-model="text"/>
+    <CustomSelect :items="['select', 'name']"/>
     <ApartmentList :items="apartments">
       
       <template v-slot:title>New Title</template>
@@ -15,7 +16,7 @@
 import ApartmentList from './components/apartment/ApartmentList.vue'
 import apartments from './components/apartment/apartments'
 import CustomInput from './components/shared/CustomInput.vue'
-
+import CustomSelect from './components/shared/CustomSelect.vue'
 
 
 export default {
@@ -23,6 +24,7 @@ export default {
   components: {
     ApartmentList,
     CustomInput,
+    CustomSelect,
   },
   data() {
     return {
