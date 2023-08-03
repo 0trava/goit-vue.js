@@ -1,7 +1,10 @@
 <template>
   <div >
+    <CustomInput v-model="text"/>
     <ApartmentList :items="apartments">
+      
       <template v-slot:title>New Title</template>
+
     </ApartmentList>
   </div>
 </template>
@@ -11,6 +14,7 @@
 <script>
 import ApartmentList from './components/apartment/ApartmentList.vue'
 import apartments from './components/apartment/apartments'
+import CustomInput from './components/shared/CustomInput.vue'
 
 
 
@@ -18,6 +22,7 @@ export default {
   name: 'App',
   components: {
     ApartmentList,
+    CustomInput,
   },
   data() {
     return {
